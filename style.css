@@ -1,0 +1,24 @@
+body{
+
+    background-color: rgb(255, 255, 255);
+    color:rgb(249, 249, 249);
+    font-size: 20px;
+}
+*{
+    margin: 0;
+}
+header{
+    background-color: rgb(50, 4, 4);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(251, 251, 251);
+    font-size: 20px ;
+}
+
+ul{
+display: flex;
+
+}
