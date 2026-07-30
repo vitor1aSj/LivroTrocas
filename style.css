@@ -6,6 +6,7 @@ body{
 }
 *{
     margin: 0;
+   
 }
 header{
     background-color: rgb(50, 4, 4);
@@ -19,6 +20,21 @@ header{
 }
 
 ul{
-display: flex;
+display:flex;
+gap: 50px;
+list-style: none;
+}
 
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover{
+    color:rgb(121, 18, 18);
+    background-color: rgb(139, 130, 118);
+    border-radius: 5px;
+    border: 2px ridge black;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
