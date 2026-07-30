@@ -25,16 +25,22 @@ gap: 50px;
 list-style: none;
 }
 
-a{
+.menu{
     display: inline-block;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    padding: 5px;
+    transition: 0.3s;
 }
 
-a:hover{
+.menu:hover{
     color:rgb(121, 18, 18);
     background-color: rgb(139, 130, 118);
     border-radius: 5px;
     border: 2px ridge black;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0); 
+}
+{
+section
+
 }
