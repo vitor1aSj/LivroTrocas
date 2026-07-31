@@ -1,46 +1,76 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-    background-color: rgb(255, 255, 255);
-    color:rgb(249, 249, 249);
-    font-size: 20px;
-}
+
 *{
     margin: 0;
-   
+
+    font-family: ; 
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
 }
+
 header{
-    background-color: rgb(50, 4, 4);
-    width: 100%;
-    height: 70px;
+    background-color:#560a0a ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(251, 251, 251);
-    font-size: 20px ;
+    color: #FFF;
+    max-width: 100%;
+    height: 70px;
+    padding: 0 100px ;
 }
 
 ul{
-display:flex;
-gap: 50px;
-list-style: none;
+    display: flex;
+    gap: 50px;
+    list-style: none;
 }
 
 .menu{
     display: inline-block;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 5px;
+    color: #FFF;
+    padding: 10px 15px;
     transition: 0.3s;
 }
 
 .menu:hover{
-    color:rgb(121, 18, 18);
-    background-color: rgb(139, 130, 118);
-    border-radius: 5px;
-    border: 2px ridge black;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0); 
+    color: #2b0303;
+    background-color: rgba(108, 8, 8, 0.886);
+    border-radius: 10px;
+    border: #310404;
+    box-shadow: 3px 3px 3px #280202;
+    
 }
-{
-section
+
+
+.banner-principal{
+    text-align: center;
+    padding: 40px 200px; 
+    background-color:#0e0d0d;;
+    color: #FFF;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+#btn-ver-livros{
+    background-color: #550b0b;
+    text-decoration: none;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#btn-ver-livros:hover{
+    background-color: #423e3e;
+    border: none;
 
 }
