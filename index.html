@@ -1,31 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Book's</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOK'S - Troque Livros Imortais</title>
+  
+  <!-- Fontes Góticas e Elegantes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1><div  id="nome-logo">Book's </div></h1>
-        <nav>
-            <ul>
-                <li> <a class="menu" href="#"> Início </a> </li>
-                <li> <a class="menu" href="#"> Livros </a> <li>
-                <li> <a class="menu" href="#"> Ajuda </a> </li>
-                <li> <a class="menu" href="#"> Conta </a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="banner-principal">
-        <h1 >Troque livros, multiplique histórias</h1>
-        <p>A ConnectBook conecta leitores para trocar livros de forma simples, gratuita e sustentável. <br> Dê um novo destino aos livros que você já leu.</p>
-        <a id="btn-ver-livros" href="#livros"> Ver livros disponíveis</a>       
-    </section>
+
+  <!-- Efeito Visual de Névoa de Fundo -->
+  <div class="vampire-bg"></div>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="logo">
+      BOOK'S
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav-link">INÍCIO</a>
+      <a href="#livros" class="nav-link">LIVROS</a>
+      <a href="#" class="nav-link">AJUDA</a>
+      <a href="#" class="nav-link">CONTA</a>
+    </nav>
+  </header>
+
+  <!-- Seção Principal (Hero) -->
+  <main class="hero">
+    <div class="hero-content">
+      <h1 class="glow-title">
+        TROQUE LIVROS,<br>
+        <span class="highlight">MULTIPLIQUE HISTÓRIAS</span>
+      </h1>
+
+      <p class="description">
+        A <strong>Book's</strong> conecta leitores das sombras para trocar tomos de forma simples, gratuita e imortal. Dê um novo destino aos livros que você já leu.
+      </p>
+
+      <a href="#livros" class="vampire-btn">
+        <span class="btn-text">EXPLORAR GRIMÓRIOS</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- SEÇÃO DE LIVROS DISPONÍVEIS -->
+  <section class="books-section" id="livros">
+    <div class="section-header">
+      <h2 class="section-title">TOMOS DISPONÍVEIS PARA TROCA</h2>
+      <div class="divider">✦</div>
+    </div>
+
+    <div class="books-grid">
+      
+      <!-- Card 1: Obsessão Sangria -->
+      <article class="book-card">
+        <div class="book-cover-wrapper">
+          <span class="badge badge-disponivel">Disponível</span>
+          <img src="img/diarios-do-vampiro.jpg" alt="Capa do livro">
+          <div class="overlay">
+            <a href="#" class="btn-trocar">SOLICITAR TROCA</a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-author">L. J. Smith</span>
+          <h3 class="book-title">Diário do Vampiro</h3>
+        </div>
+      </article>
+
+      <!-- Card 2: O Castelo de Otranto -->
+      <article class="book-card">
+        <div class="book-cover-wrapper">
+          <span class="badge badge-disponivel">Disponível</span>
+          <img src="img2/61XzNR2UfTL._SL1000_.jpg" alt="Capa O Castelo de Otranto" class="book-cover">
+          <div class="overlay">
+            <a href="#" class="btn-trocar">SOLICITAR TROCA</a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-author">J.M Pimentel</span>
+          <h3 class="book-title">Vampiro - Sozinho na Escuridão</h3>
+        </div>
+      </article>
+
+      <!-- Card 3: Cuentos Góticos -->
+      <article class="book-card">
+        <div class="book-cover-wrapper">
+          <span class="badge badge-disponivel">Disponível</span>
+          <img src="imagens/cuentos-goticos.jpg" alt="Capa Cuentos Góticos" class="book-cover">
+          <div class="overlay">
+            <a href="#" class="btn-trocar">SOLICITAR TROCA</a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-author">Mary Shelley</span>
+          <h3 class="book-title">Cuentos Góticos</h3>
+          <p class="book-sub">Edição Especial Ilustrada</p>
+          <p class="book-condition">Estado: <span>Conservado / Capa dura</span></p>
+          <div class="owner-tag">Doador: <em>@Mary_Nightmare</em></div>
+        </div>
+      </article>
+
+      <!-- Card 4: A Mulher Enforcada -->
+      <article class="book-card">
+        <div class="book-cover-wrapper">
+          <span class="badge badge-reservado">Em Negociação</span>
+          <img src="imagens/a-mulher-enforcada.jpg" alt="Capa A Mulher Enforcada" class="book-cover">
+          <div class="overlay">
+            <a href="#" class="btn-trocar disabled">INDISPONÍVEL</a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-author">Angelique Ruthven</span>
+          <h3 class="book-title">A Mulher Enforcada</h3>
+          <p class="book-sub">Godos: Contos Góticos - Vol. 10</p>
+          <p class="book-condition">Estado: <span>Usado</span></p>
+          <div class="owner-tag">Doador: <em>@Ruthven_Goth</em></div>
+        </div>
+      </article>
+
+      <!-- Card 5: Edgar Allan Poe -->
+      <article class="book-card">
+        <div class="book-cover-wrapper">
+          <span class="badge badge-disponivel">Disponível</span>
+          <img src="imagens/edgar-allan-poe.jpg" alt="Capa O Corvo e Outros Contos" class="book-cover">
+          <div class="overlay">
+            <a href="#" class="btn-trocar">SOLICITAR TROCA</a>
+          </div>
+        </div>
+        <div class="book-info">
+          <span class="book-author">Edgar Allan Poe</span>
+          <h3 class="book-title">O Corvo e Outros Contos</h3>
+          <p class="book-sub">Obras de Edgar Allan Poe - Vol. 1</p>
+          <p class="book-condition">Estado: <span>Perfeito Estado</span></p>
+          <div class="owner-tag">Doador: <em>@Nevermore_Poe</em></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
 
 </body>
-
 </html>
