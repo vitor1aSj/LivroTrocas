@@ -198,7 +198,7 @@ body {
 .books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2.5rem; 
+  gap: 2rem; 
   
   justify-content: center;
 }
@@ -207,7 +207,7 @@ body {
 .book-card {
   background: rgba(20, 5, 8, 0.85);
   border: 1px solid rgba(255, 0, 43, 0.25);
-  border-radius: 6px;
+  border-radius: 7px;
   padding: 1.2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -226,7 +226,7 @@ body {
 .book-cover-wrapper {
   position: relative;
   width: 100%;
-  height: 370px;
+  height: 570px; /*largura*/
   overflow: hidden;
   border-radius: 4px;
   border: 1px solid rgba(243, 229, 171, 0.2);
@@ -430,3 +430,37 @@ img {
   width:100%;
   height: auto;
   }
+.ajuda {
+  background-color: #000000;
+    padding: 80px 100px;
+}
+ 
+.ajuda h2 {
+  color: #5d1010;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 35px;
+}
+ 
+.todos-passos {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.ajuda {
+  background-color: #170101;
+    padding: 80px 100px;
+}
+ 
+.ajuda h2 {
+  color: #ffffff;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 35px;
+}
+ 
+.todos-passos {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
