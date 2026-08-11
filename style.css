@@ -464,3 +464,19 @@ img {
     justify-content: space-between;
     gap: 80px;
 }
+
+footer{    
+    background-image: linear-gradient(#190202);
+}
+
+.footer-container{
+    margin: 0 auto;
+    width: 90vw;
+    color: #FFF;
+    display: flex;
+}
+
+.footer-coluna{
+    display: flex;
+    flex-direction: column;
+}
