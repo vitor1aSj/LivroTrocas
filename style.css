@@ -448,7 +448,7 @@ img {
     gap: 80px;
 }
 .ajuda {
-  background-color: #170101;
+  background-image: linear-gradient(#0f0101, #4d0505);
     padding: 80px 100px;
 }
  
@@ -464,19 +464,68 @@ img {
     justify-content: space-between;
     gap: 80px;
 }
-
-footer{    
-    background-image: linear-gradient(#190202);
+footer{
+    background-image: linear-gradient(#000000, #4d0505);
+    color: #FFF;
+    padding: 10px;
 }
+
 
 .footer-container{
-    margin: 0 auto;
-    width: 90vw;
-    color: #FFF;
     display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
 }
+
+.logo{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer-coluna p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 
 .footer-coluna{
     display: flex;
     flex-direction: column;
+    max-width: 28vw;
+}
+
+.footer-coluna ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0;
+}
+ a{
+    text-decoration: none;
+    color: #FFF;
+ }
+
+
+ .footer-coluna h4{
+    color: var(--laranja-principal);
+ }
+
+
+ .footer-social{
+    padding: 15px;
+ }
+
+.footer-linha{
+    max-width: 70vw;
+    margin: 20px auto;
+    border: 1px solid var(--laranja-escurao);
+}
+
+.footer-copy{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 22px;
 }
