@@ -1,0 +1,195 @@
+@import url(style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050203;
+    color: #e0e0e0;
+    font-family: 'Times New Roman', serif, system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal */
+main {
+    width: 1142px;
+    height: 673px;
+    border: 1px solid #721111;
+    box-shadow: 0 0 25px rgba(139, 0, 0, 0.3);
+    margin: 5vh auto;
+    background: radial-gradient(circle at center, #1a0507 0%, #080203 100%);
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Seção da Imagem */
+.sessao-imagem {
+    width: 522px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0405;
+    border-right: 1px solid #3d0a0a;
+}
+
+.sessao-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85) contrast(1.1);
+}
+
+/* Seção do Formulário */
+.sessao-login {
+    height: 100%;
+    width: 620px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Títulos */
+.area-titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.area-titulo h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.area-titulo h1 span {
+    color: #ff3333;
+    font-size: 38px;
+    text-shadow: 0 0 12px rgba(255, 51, 51, 0.6);
+}
+
+.area-titulo h2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #a39292;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Estilização do Formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-input label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #cccccc;
+}
+
+.campo-input input {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: rgba(15, 5, 6, 0.8);
+    border: 1px solid #541010;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.campo-input input:focus {
+    border-color: #ff2222;
+    box-shadow: 0 0 10px rgba(255, 34, 34, 0.4);
+}
+
+/* Opções (Lembrar / Esqueci Senha) */
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #a39292;
+}
+
+.opcoes-login label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.opcoes-login input[type="checkbox"] {
+    accent-color: #990000;
+}
+
+.esqueci-senha {
+    color: #a39292;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.esqueci-senha:hover {
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+/* Botão Estilo "Explorar Grimórios" */
+.btn-login {
+    margin-top: 10px;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #b30000;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(179, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #8b0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    border-color: #ff3333;
+}
+
+/* Chamada para Cadastro */
+.criar-conta {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+.criar-conta a {
+    color: #ff3333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.criar-conta a:hover {
+    text-decoration: underline;
+}
