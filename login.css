@@ -1,195 +1,181 @@
-@import url(style.css);
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel Decorative', serif;
 }
 
 body {
-    background-color: #050203;
-    color: #e0e0e0;
-    font-family: 'Times New Roman', serif, system-ui;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Container Principal */
+/* Card Principal Centralizado na Tela com altura auto-ajustável */
 main {
-    width: 1142px;
-    height: 673px;
-    border: 1px solid #721111;
-    box-shadow: 0 0 25px rgba(139, 0, 0, 0.3);
-    margin: 5vh auto;
-    background: radial-gradient(circle at center, #1a0507 0%, #080203 100%);
-    display: flex;
-    border-radius: 8px;
-    overflow: hidden;
+  display: flex;
+  width: 900px;
+  max-width: 95%;
+  min-height: 550px;
+  background-color: #090203;
+  border: 1px solid #3d050a;
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.15);
+  overflow: hidden;
 }
 
-/* Seção da Imagem */
+/* Lado Esquerdo - Imagem */
 .sessao-imagem {
-    width: 522px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0d0405;
-    border-right: 1px solid #3d0a0a;
+  width: 50%;
+  background-color: #000;
 }
 
 .sessao-imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.85) contrast(1.1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* Seção do Formulário */
+/* Lado Direito - Formulário */
 .sessao-login {
-    height: 100%;
-    width: 620px;
-    padding: 40px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 50%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Títulos */
 .area-titulo {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.area-titulo h1 {
-    font-size: 38px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-    text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .area-titulo h1 span {
-    color: #ff3333;
-    font-size: 38px;
-    text-shadow: 0 0 12px rgba(255, 51, 51, 0.6);
+  color: #ff2222;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .area-titulo h2 {
-    font-size: 16px;
-    font-weight: 300;
-    color: #a39292;
-    margin-top: 5px;
-    letter-spacing: 1px;
+  color: #888888;
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
-/* Estilização do Formulário */
 .form-login {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .campo-input {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .campo-input label {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #cccccc;
+  color: #cccccc;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .campo-input input {
-    width: 100%;
-    padding: 12px 16px;
-    background-color: rgba(15, 5, 6, 0.8);
-    border: 1px solid #541010;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 15px;
-    outline: none;
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 9px 12px;
+  background-color: #050203;
+  border: 1px solid #2b080c;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 13px;
+  outline: none;
 }
 
 .campo-input input:focus {
-    border-color: #ff2222;
-    box-shadow: 0 0 10px rgba(255, 34, 34, 0.4);
+  border-color: #ff2222;
 }
 
-/* Opções (Lembrar / Esqueci Senha) */
 .opcoes-login {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    color: #a39292;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #888888;
 }
 
 .opcoes-login label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
-}
-
-.opcoes-login input[type="checkbox"] {
-    accent-color: #990000;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
 }
 
 .esqueci-senha {
-    color: #a39292;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #888888;
+  text-decoration: none;
 }
 
 .esqueci-senha:hover {
-    color: #ff4d4d;
-    text-decoration: underline;
+  color: #ff2222;
 }
 
-/* Botão Estilo "Explorar Grimórios" */
 .btn-login {
-    margin-top: 10px;
-    padding: 14px;
-    background: transparent;
-    border: 1px solid #b30000;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(179, 0, 0, 0.3);
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 11px;
+  margin-top: 5px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #800000;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn-login:hover {
-    background-color: #8b0000;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
-    border-color: #ff3333;
+  background-color: #800000;
+  border-color: #ff2222;
 }
 
-/* Chamada para Cadastro */
 .criar-conta {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-    color: #888;
+  text-align: center;
+  font-size: 12px;
+  color: #888888;
+  margin-top: 10px;
 }
 
 .criar-conta a {
-    color: #ff3333;
-    text-decoration: none;
-    font-weight: bold;
+  color: #ff2222;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .criar-conta a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sessao-imagem,
+  .sessao-login {
+    width: 100%;
+  }
+
+  .sessao-imagem {
+    height: 200px;
+  }
 }
