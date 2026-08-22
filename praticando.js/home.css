@@ -1,23 +1,23 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     text-align: center;
 }
 
-main{
+main {
     margin: 20px auto;
     width: 75vw;
     text-align: center;
 }
 
-h2{
-    background-color: darkred;
+h2 {
+    background-color: rgb(134, 94, 142);
     border-radius: 10px;
     font-size: 18px;
     font-weight: 400;
@@ -25,19 +25,41 @@ h2{
     padding: 10px;
 }
 
-input{
+input {
     margin-bottom: 20px;
 }
 
-#caixa{
+#caixa {
     width: 400px;
     height: 200px;
-    background-color: rgb(51, 5, 5);
+    background-color: rgb(91, 54, 115);
     margin: 20px auto;
+    box-shadow: 0 0 20px rgb(115, 83, 125);
+    border-radius: 20px;
 }
 
-.btn{
+.btn {
     padding: 5px 10px;
-    margin-right: 10px ;
+    margin-right: 10px;
+
+}
+
+.area_add_sub {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    font-size: 22px;
+}
+
+.area_add_sub button {
+    padding: 5px;
+    background-color: rgb(93, 60, 98);
+    border: 1px solid rgb(115, 83, 125);
+    color: rgb(89, 27, 112);
+    border-radius: 5px;
+}
+
+.area_add_sub button:hover {
+    background-color: rgb(255, 255, 255);
 
 }
