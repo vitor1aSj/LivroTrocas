@@ -63,3 +63,8 @@ document.getElementById("adiciona_livro").addEventListener('click', () => {
 
     nomeLivro.value = "";
 });
+
+document.getElementById("remover_livro").addEventListener('click', () => {
+    listaLivros.innerHTML = "";
+
+});
