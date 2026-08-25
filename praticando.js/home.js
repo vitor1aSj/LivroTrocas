@@ -52,19 +52,24 @@ document.getElementById("btn_mais").addEventListener('click', () => {
 
 //add livros
 
-const nomeLivro = document.getElementById("nome_livro");
-const listaLivros = document.getElementById("lista_livros");
-
+const nomelivro = document.getElementById("nome_livro");
+const listaLivros = document.getElementById("lista_livros")
+ 
 document.getElementById("adiciona_livro").addEventListener('click', () => {
-
-    const novoLivro = document.createElement("li");
-    novoLivro.textContent = nomeLivro.value;
-    listaLivros.appendChild(novoLivro);
-
-    nomeLivro.value = "";
+ 
+const novolivro = document. createElement("li");
+novolivro.textContent = nomelivro. value;
+    const botaoApagar = document.createElement("button");
+    botaoApagar.textContent = "Apagar";
+ 
+    botaoApagar.addEventListener("click", () => {
+        novolivro.remove();
+    });
+ 
+    novolivro.appendChild(botaoApagar);
+    listaLivros.appendChild(novolivro);
+ 
+    nomelivro.value = "";
 });
+    
 
-document.getElementById("remover_livro").addEventListener('click', () => {
-    listaLivros.innerHTML = "";
-
-});
