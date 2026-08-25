@@ -52,24 +52,33 @@ document.getElementById("btn_mais").addEventListener('click', () => {
 
 //add livros
 
-const nomelivro = document.getElementById("nome_livro");
+const nomeLivro = document.getElementById("nome_livro");
 const listaLivros = document.getElementById("lista_livros")
- 
-document.getElementById("adiciona_livro").addEventListener('click', () => {
- 
-const novolivro = document. createElement("li");
-novolivro.textContent = nomelivro. value;
-    const botaoApagar = document.createElement("button");
-    botaoApagar.textContent = "Apagar";
- 
-    botaoApagar.addEventListener("click", () => {
-        novolivro.remove();
-    });
- 
-    novolivro.appendChild(botaoApagar);
-    listaLivros.appendChild(novolivro);
- 
-    nomelivro.value = "";
+
+document.getElementById("adiciona_livro").addEventListener('click', ()=>{
+    
+    const novoLivro = document.createElement("li");
+    novoLivro.textContent = nomeLivro.value;
+   
+    const novoButtton = document.createElement("button");
+    novoButtton.classList.add("btn_x");
+    novoButtton.textContent = "X"; 
+    novoButtton.style.marginLeft = "20px";
+    novoLivro.appendChild(novoButtton);
+
+    listaLivros.appendChild(novoLivro);
+
+    novoButtton.addEventListener( 'click', () => {
+        novoLivro.remove();
+    })
+
+    nomeLivro.value = "";
+
+});
+
+
+document.getElementById("remover_livro").addEventListener('click', ()=>{
+    listaLivros.innerHTML = "";
 });
     
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
     <title>Área de Login | BOOK'S</title>
 </head>
 <body>
@@ -11,9 +12,6 @@
     <main>
         <!-- Lado Esquerdo: Imagem -->
         <section class="sessao-imagem">
-            <!-- ============================================= -->
-            <!-- SUBTITUA 'img4.jpg' PELA SUA IMAGEM DA MÃO/LIVRO -->
-            <!-- ============================================= -->
             <img src="img4.jpg" alt="Capa Book's">
         </section>
         
@@ -26,30 +24,33 @@
 
             <form class="form-login" action="#">
                 <div class="campo-input">
-                    <label for="email">E-mail ou Tomo de Acesso</label>
-                    <input type="email" id="email" placeholder="seu@email.com" required>
+                    <label for="email">E-mail de Acesso</label>
+                    <input type="text" id="email" placeholder="Informe seu email">
                 </div>
 
                 <div class="campo-input">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="••••••••" required>
+                    <input type="password" id="senha" placeholder="Informe sua senha">
                 </div>
 
                 <div class="opcoes-login">
                     <label class="lembrar">
                         <input type="checkbox"> Lembrar-me
                     </label>
-                    <a href="#" class="esqueci-senha">Esqueceu a senha?</a>
+                    <a href="" class="esqueci-senha">Esqueceu a senha?</a>
                 </div>
 
-                <button type="submit" class="btn-login">ENTRAR</button>
+                <!-- Corrigido o espaço no id -->
+                <p id="msg-login"></p> 
+
+                <!-- Adicionado id="btn-acessar" ao botão -->
+                <button type="submit" id="btn-acessar" class="btn-login">ENTRAR</button>
 
                 <p class="criar-conta">
                     Ainda não é um leitor? <a href="cadastro.html">Cadastre-se</a>
                 </p>
             </form>
         </section>
-    </main>
-git 
+    </main> 
 </body>
 </html>
