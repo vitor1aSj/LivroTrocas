@@ -12,7 +12,7 @@ btnAcessar.addEventListener('click', (event) => {
     if (emailDigitado.value === emailSalvo && senhaDigitada.value == senhaSalva) {
         msgLogin.textContent = "Login efetuado com sucesso!";
         msgLogin.style.color = "green";
-        location.href = "index.html";
+        window.location.href = "index.html";
     } else {
         msgLogin.textContent = "E-mail ou senha incorretos!";
         msgLogin.style.color = "red";
