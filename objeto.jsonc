@@ -1,0 +1,15 @@
+
+/* Java script object notation
+ Modelo de traferência de objetos 
+*/
+
+{
+        "nome": "joão",
+        "email": "joao@gmail.com",
+        "usuario": "joaoChaveirinho",
+        "senha": "010203",
+        "confirmarSenha": "010203",
+        "idade": 25,
+        "nome": 85.3
+
+}
